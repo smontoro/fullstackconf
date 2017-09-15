@@ -12,29 +12,26 @@
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target=".navbar" id="home">
 
-    <!-- navbar 
-<nav class="navbar fixed-top navbar-inverse bg-primary pb-4">
-<div class="container">
-    <ul class="nav navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#speakers">Speakers</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#schedule">Schedule</a>
-      </li>
-    </ul>
-    <a class="navbar-brand ml-auto hidden-xs-down" href="#">Presented by Treehouse</a>
+<!-- nav-->  
+<nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-xl bg-primary fixed-top">
+  <div class="container">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link text-white" href="#home">Home</a>
+      <a class="nav-item nav-link text-light" href="#about">About</a>
+      <a class="nav-item nav-link text-light" href="#speakers">Speakers</a>
+      <a class="nav-item nav-link text-light" href="#schedule">Schedule</a>
+    </div>
   </div>
+   <a class="hidden-xs-down navbar-brand text-white" href="#">Presented by Treehouse</a>
+   </div>
 </nav>
--->
+
 
     <!-- jumotron -->
     <div class="jumbotron jumbotron-fluid bg-info text-white">
@@ -46,10 +43,6 @@
                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
                 <a type="button" class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
             </div>
-
-
-
-
         </div>
     </div>
     <!-- /jumbotron -->
@@ -57,7 +50,7 @@
     <div class="container pt-5">
 
         <!--about-->
-        <div class="row">
+        <div class="row" id="about">
             <div class="col-md-4">
                 <h3 class="mb-4">About Full Stack Conf</h3>
                 <!--Why won't the image shape change?-->
@@ -154,9 +147,8 @@
         <!-- /speakers -->
 
         <!-- schedule -->
-        <h1 class="display-4 text-center text-muted">Schedule</h1>
+        <h1 class="display-4 text-center text-muted" id="schedule">Schedule</h1>
         
-<!-- schedule -->
 <ul class="list-group" id="schedule">
   <li class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
@@ -279,7 +271,12 @@
         </button>
       </div>
       <div class="modal-body">
-        <p>Form goes here...</p>
+        <!-- registration form-->
+
+
+
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
